@@ -41,11 +41,6 @@ body {
 /* Content                                                                   */
 /*****************************************************************************/
 
-b {
-  font-weight: normal;
-  color: #33b5e5;
-}
-
 .section {
   padding-top: 80px;
 }
