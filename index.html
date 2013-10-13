@@ -2,11 +2,99 @@
 layout: default
 ---
 
-<div id="home">
-  <h1>Blog Posts</h1>
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
+<div class="section">
+
+<div class="row">
+  <div class="span6">
+    <h1>charlee.li</h1>
+    <p class="intro">
+    I am Charlee Li,<br />
+    a developer in Toronto, Ontario, Canada.</p>
+    <p class="intro">
+    Mainly playing with <b>back-end</b> / <b>front-end</b> web development
+    and <b>Android</b> development.
+    </p>
+
+    <h2>Links</h2>
+    <p>Tech blog: <a href="http://tech.idv2.com/" target="_blank">idv2.com</a> (in Chinese) </p>
+    <p>
+      <a class="social-icon twitter" href="https://twitter.com/odacharlee" target="_blank"></a>
+      <a class="social-icon linkedin" href="http://www.linkedin.com/in/charleeli" target="_blank"></a>
+      <a class="social-icon facebook" href="https://www.facebook.com/oda.charlee" target="_blank"></a>
+    </p>
+
+  </div>
+
+  <div class="span6">
+    <div class="block">
+      <div class="block-title">My Skill Set</div>
+
+      <div class="block-content">
+        <div class="tag-container">
+          <span class="tag">python</span>
+          <span class="tag">django</span>
+          <span class="tag">javascript</span>
+          <span class="tag">jQuery</span>
+          <span class="tag">css</span>
+          <span class="tag">linux</span>
+          <span class="tag">android</span>
+          <span class="tag">sql</span>
+          <span class="tag">mysql</span>
+          <span class="tag">redis</span>
+          <span class="tag">c</span>
+          <span class="tag">c++</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="block">
+      <div class="block-title">Experiences</div>
+      <div class="block-content">
+        <ul>
+          <li>Developer (Python, Front-end, Android) - 1 yr</li>
+          <li>Python Developer - 1 yr</li>
+          <li>Project Manager - 3.5 yrs</li>
+          <li>Web Developer - 1.5 yrs</li>
+          <li>Embedded System Developer - 2 yrs</li>
+        </ul>
+        <p align="right"><a href="http://www.linkedin.com/in/charleeli" target="_blank">See more on my LinkedIn profile...</a></p>
+      </div>
+    </div>
+
+  </div>
+
 </div>
+
+</div>
+
+<div class="section">
+  <p>I am learning drawing. Here is my gallery.</p>
+
+  <div class="gallery">
+    <div class="thumb"></div>
+    <div class="thumb"></div>
+  </div>
+
+</div>
+
+
+<link href="/css/jquery.fullPage.css" rel="stylesheet" />
+<script type="text/javascript" src="/js/jquery.fullPage.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+  $.fn.fullpage({
+    verticalCentered: false,
+    scrollingSpeed: 500,
+    resize: false,
+    anchors: [ 'profile', 'gallery' ],
+    menu: "#menu"
+  });
+
+  var hash = location.hash.substr(1);
+  /*
+  if (hash === "gallery") {
+    $.fn.fullpage.moveToSlide("#
+  }
+  */
+});
+</script>
