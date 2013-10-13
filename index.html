@@ -2,14 +2,12 @@
 layout: default
 ---
 
-<div class="section">
-
 <div class="row">
-  <div class="span6">
+  <div class="col-lg-6">
     <h1>charlee.li</h1>
     <p class="intro">
     I am Charlee Li,<br />
-    a developer in Toronto, Ontario, Canada.</p>
+    a programmer in Toronto, Ontario, Canada.</p>
     <p class="intro">
     Mainly playing with back-end / front-end web development
     and Android development.
@@ -25,7 +23,7 @@ layout: default
 
   </div>
 
-  <div class="span6">
+  <div class="col-lg-6">
     <div class="block">
       <div class="block-title">My Skill Set</div>
 
@@ -66,36 +64,7 @@ layout: default
 
 </div>
 
-</div>
-
-<div class="section">
-  <p>I am learning drawing. Here is my gallery.</p>
-
-  <div class="gallery">
-    <div class="thumb"></div>
-    <div class="thumb"></div>
-  </div>
-
-</div>
-
-
-<link href="/css/jquery.fullPage.css" rel="stylesheet" />
-<script type="text/javascript" src="/js/jquery.fullPage.min.js"></script>
 <script type="text/javascript">
-$(document).ready(function() {
-  $.fn.fullpage({
-    verticalCentered: false,
-    scrollingSpeed: 500,
-    resize: false,
-    anchors: [ 'profile', 'gallery' ],
-    menu: "#menu"
-  });
-
-  var hash = location.hash.substr(1);
-  /*
-  if (hash === "gallery") {
-    $.fn.fullpage.moveToSlide("#
-  }
-  */
-});
+$("#nav-profile").addClass("active");
 </script>
+

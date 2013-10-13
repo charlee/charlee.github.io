@@ -4,7 +4,13 @@
 /*
 /*****************************************************************************/
 
-html, body { height: 100%; }
+* {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+html, body {
+  height: 100%; 
+}
 
 body {
   background-color: #f9f9f9;
@@ -17,25 +23,44 @@ body {
   font-family: "Droid Sans Mono", Consolas, Monaco, "Courier New", monospace;
 }
 
-.navbar-fixed-top {
-  opacity: .75;
-}
-
-.navbar-inner {
+.navbar {
+  border-radius: 0;
+  border: 0;
   background: #fff;
-  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065) !important;
-  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065) !important;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065) !important;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
 }
 
-.navbar-inner .container {
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>.active>a:focus
+{
+  border-bottom: solid 4px #33b5e5;
+  background: #fff;
 }
 
-.navbar .nav>.active>a, .navbar .nav>.active>a:focus, .navbar .nav>.active>a:hover {
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
+.dropdown-menu {
+  border-radius: 0;
+  background: #f9f9f9;
+  border: solid 1px #ccc;
 }
+
+.navbar-default .navbar-toggle {
+  border: 0;
+  height: 28px;
+  width: 40px;
+  margin-top: 12px;
+  background-color: transparent;
+  background: url(../img/icon_more.png) no-repeat;
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: transparent;
+  background-position: 0 -28px;
+}
+
 
 /*****************************************************************************/
 /* Content                                                                   */
@@ -100,15 +125,15 @@ h2 {
   display: inline-block;
   width: 24px;
   height: 24px;
-  background-image: url(../img/icons.png);
+  background: url(../img/icons.png) no-repeat;
 }
 
 .twitter { background-position: 0 0; }
-.rss { background-position: 24px 0; }
-.facebook { background-position: 48px 0; }
-.youtube { background-position: 72px 0; }
-.linkedin { background-position: 96px 0; }
-.flickr { background-position: 120px 0; }
+.rss { background-position: -24px 0; }
+.facebook { background-position: -48px 0; }
+.youtube { background-position: -72px 0; }
+.linkedin { background-position: -96px 0; }
+.flickr { background-position: -120px 0; }
 
 .gallery {
   margin-top: 30px;
@@ -129,4 +154,8 @@ h2 {
   -webkit-box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.1);
   box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.1);
+}
+
+.block-content ul {
+  padding-left: 24px;
 }
