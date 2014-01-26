@@ -159,3 +159,38 @@ h2 {
 .block-content ul {
   padding-left: 24px;
 }
+
+
+/*****************************************************************************/
+/* Search                                                                    */
+/*****************************************************************************/
+.relative {
+  position: relative;
+}
+.search-button {
+  width: 50px;
+  height: 28px;
+  background: url(/img/icon_search.png) 0px 0px no-repeat;
+  float: left;
+}
+
+.search-box {
+  display: none;
+  float: right;
+}
+
+.search-bar {
+  position: absolute;
+  margin-top: 12px;
+  right: 0;
+}
+
+.search-button:hover, .search-button .active {
+  background-position: 0 -28px;
+}
+
+@media (max-width: 768px) {
+  .search-bar {
+    margin-right: 60px;
+  }
+}

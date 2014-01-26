@@ -22,7 +22,15 @@
   <body>
 
     <div class="navbar navbar-default">
-      <div class="container">
+      <div class="container relative">
+
+        <div class="search-bar">
+          <div class="search-button"></div>
+          <div class="search-box">
+            <input type="text">
+          </div>
+        </div>
+
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="dropdown">
           </button>
@@ -31,8 +39,11 @@
             <li><a href="http://blog.charlee.li/">blog</a></li>
             <li><a href="/gallery.html">gallery</a></li>
           </ul>
+
           <a href="/" class="navbar-brand">{{ site.name }}</a>
         </div>
+
+
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
             <li id="nav-profile"><a href="/">profile</a></li>
@@ -40,6 +51,8 @@
             <li id="nav-gallery"><a href="/gallery.html">gallery</a></li>
           </ul>
         </div>
+
+
       </div>
     </div>
 
