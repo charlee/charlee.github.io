@@ -167,6 +167,14 @@ h2 {
 .relative {
   position: relative;
 }
+
+.search-bar {
+  position: absolute;
+  right: 0;
+  margin-top: 12px;
+  margin-right: 15px;
+}
+
 .search-button {
   width: 50px;
   height: 28px;
@@ -175,17 +183,18 @@ h2 {
 }
 
 .search-box {
-  display: none;
+  width: 0;
+  overflow: hidden;
   float: right;
+  transition: width 0.5s;
+  -webkit-transition: width 0.5s;
 }
 
-.search-bar {
-  position: absolute;
-  margin-top: 12px;
-  right: 0;
+.search-bar.active .search-box {
+  width: 320px;
 }
 
-.search-button:hover, .search-button .active {
+.search-button.active {
   background-position: 0 -28px;
 }
 
@@ -193,4 +202,12 @@ h2 {
   .search-bar {
     margin-right: 60px;
   }
+}
+
+.gsc-search-button {
+  display: none !important;
+}
+
+.gsc-control-cse {
+  padding: 0 !important;
 }
