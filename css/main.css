@@ -32,6 +32,18 @@ body {
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
 }
 
+.navbar-default .navbar-nav {
+  background: #fff;
+}
+
+.navbar-default .navbar-nav a {
+  margin-right: 4px;
+}
+
+.navbar-default .navbar-nav a:hover {
+  border-bottom: solid 4px #33b5e5;
+}
+
 .navbar-default .navbar-nav>.active>a,
 .navbar-default .navbar-nav>.active>a:hover,
 .navbar-default .navbar-nav>.active>a:focus
